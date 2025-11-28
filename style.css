@@ -421,6 +421,26 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 4rem;
+  position: relative;
+}
+
+.ralph-image-container {
+  position: absolute;
+  left: -13vw;
+  top: 100px;
+  width: 16vw;
+  min-width: 120px;
+  max-width: 220px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 2rem;
+}
+
+.ralph-image {
+  width: 100%;
+  height: auto;
 }
 
 .contact-info h3,
@@ -597,6 +617,10 @@ body {
     gap: 2rem;
   }
   
+  .ralph-image-container {
+    display: none;
+  }
+  
   .sponsors-grid {
     grid-template-columns: 1fr;
   }
@@ -609,6 +633,13 @@ body {
   .stat-item h4 {
     font-size: 2rem;
   }
+}
+@media (max-width :1383px) {
+    .ralph-image
+    {
+       display: none;
+    }
+    
 }
 
 @media (max-width: 480px) {
