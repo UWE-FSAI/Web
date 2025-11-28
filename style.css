@@ -317,16 +317,12 @@ body {
   align-items: center;
 }
 
-.placeholder-image {
+.team-image {
   width: 100%;
   height: 300px;
-  background-color: var(--gray);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--light-gray);
-  font-size: 1.2rem;
+  object-fit: cover;
   border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 /* Sponsors Section */
@@ -379,6 +375,40 @@ body {
 .sponsor-card p {
   color: var(--gray);
   line-height: 1.6;
+}
+
+/* Black Card Styles */
+.black-card {
+  background-color: var(--black) !important;
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  min-height: 200px;
+  transition: all 0.3s ease;
+}
+
+.black-card:hover {
+  background-color: var(--white) !important;
+  transform: translateY(-5px);
+}
+
+.black-card-content {
+  text-align: center;
+}
+
+.black-card h3 {
+  color: var(--white) !important;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0;
+}
+.black-card:hover h3 {
+  color: var(--black) !important;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0;
 }
 
 /* Contact Section */
