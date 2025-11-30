@@ -10,6 +10,7 @@
 <link rel="apple-touch-icon" sizes="180x180" href="/assets/fav/apple-touch-icon.png" />
 <meta name="apple-mobile-web-app-title" content="UWE AI" />
 <link rel="manifest" href="/assets/fav/site.webmanifest" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -35,27 +36,58 @@
       </div>
     </header>
 
-    <!-- Hero Overlay -->
-    <div class="hero-overlay"></div>
-    
-    <!-- Hero Content -->
-    <br>
-    <br>
-    <br>
-    <br>
-    <br> 
-    <br> 
-    <div class="hero-content">
-      <h1>Welcome to UWE AI</h1>
-      <!-- Scroll Indicator -->
-      <div class="scroll-indicator">
-        <div class="scroll-icon">
-          <div class="scroll-mouse">
-            <div class="scroll-wheel"></div>
+    <!-- Hero Gallery -->
+    <div class="hero-gallery">
+      <div class="gallery-container">
+        <div class="gallery-slide active" data-bg="assets/hero/hero1.jpg">
+          <div class="hero-overlay"></div>
+          <div class="hero-content">
+            <h1>Welcome to UWE AI</h1>
+            <p>Leading Innovation in Autonomous Racing</p>
           </div>
         </div>
-        <span class="scroll-text">Scroll to discover more</span>
+        
+        <div class="gallery-slide" data-bg="assets/hero/hero2.png">
+          <div class="hero-overlay"></div>
+          <div class="hero-content">
+            <h1>Cutting-Edge Technology</h1>
+            <p>Pushing the boundaries of what's possible on the track</p>
+          </div>
+        </div>
+        
+        <div class="gallery-slide" data-bg="assets/hero/hero1.jpg">
+          <div class="hero-overlay"></div>
+          <div class="hero-content">
+            <h1>Join Our Team</h1>
+            <p>Be part of the future of motorsports</p>
+          </div>
+        </div>
       </div>
+      
+      <!-- Gallery Navigation -->
+      <button class="gallery-nav gallery-prev" aria-label="Previous slide">
+        <i class="fas fa-chevron-left"></i>
+      </button>
+      <button class="gallery-nav gallery-next" aria-label="Next slide">
+        <i class="fas fa-chevron-right"></i>
+      </button>
+      
+      <!-- Gallery Indicators -->
+      <div class="gallery-indicators">
+        <button class="indicator active" data-slide="0"></button>
+        <button class="indicator" data-slide="1"></button>
+        <button class="indicator" data-slide="2"></button>
+      </div>
+    </div>
+    
+    <!-- Scroll Indicator -->
+    <div class="scroll-indicator">
+      <div class="scroll-icon">
+        <div class="scroll-mouse">
+          <div class="scroll-wheel"></div>
+        </div>
+      </div>
+      <span class="scroll-text">Scroll to discover more</span>
     </div>
   </section>
   <!-- About Section -->
